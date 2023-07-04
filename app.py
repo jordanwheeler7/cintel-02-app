@@ -22,9 +22,9 @@ app_ui = ui.page_navbar(
             ui.panel_sidebar(
                 ui.h2("Sidebar Panel"),
                 ui.tags.hr(),
-                ui.h3("User Interaction Here"),
+                ui.h3("Please input your information below"),
                 ui.input_text("name_input", "Enter your name", placeholder="Your Name"),
-                ui.input_text("language_input", "Enter your favorite language(s)", placeholder="Favorite Programming Language(s)"),
+                ui.input_text("language_input", "Enter your favorite sport(s) team(s)", placeholder="Favorite Team(s)"),
                 ui.tags.hr(),
             ),
             ui.panel_main(
@@ -37,7 +37,7 @@ app_ui = ui.page_navbar(
     # TODO: Update the links to reflect your own about, GitHub repo, and app
     ui.nav(ui.a("About", href="https://github.com/jordanwheeler7")),
     ui.nav(ui.a("GitHub", href="https://github.com/jordanwheeler7/cintel-02-app")),
-    ui.nav(ui.a("App", href="https://jordanwheeler7.github.io/cintel-02-app/")),
+    ui.nav(ui.a("App", href="https://jordan-wheeler7.shinyapps.io/cintel-02-app1/")),
     ui.nav(ui.a("Shiny", href="https://shiny.posit.co/py/")),
     ui.nav(ui.a("Examples", href="https://shinylive.io/py/examples/")),
     ui.nav(ui.a("Themes", href="https://rstudio.github.io/py-shinyswatch/")),
@@ -70,7 +70,7 @@ def server(input, output, session):
     def insights_output():
         answer = input.language_input()
         count = len(answer)
-        language_string = f'Your preferred language(s) are {answer}. Your response uses {count} characters'
+        language_string = f'You stated that {answer} is/are your favorite team(s). Your response uses {count} characters'
         return language_string
 
 # Create a Shiny App by passing in the two parts defined above.
