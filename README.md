@@ -1,6 +1,6 @@
 # Continuous Intelligence and Interactive Analytics - Initial App
 
-- Interactive app: [cintel-02-app](https://jordan-wheeler7.shinyapps.io/cintel-02-app1/)
+- Interactive app: [cintel-02-app](https://jordan-wheeler7.shinyapps.io/cintel-02-app/)
 - Repository: [cintel-02-app](https://github.com/jordanwheeler7/cintel-02-app)
 - Author: [Jordan Wheeler](https://github.com/jordanwheeler7)
 
