@@ -72,7 +72,7 @@ def server(input, output, session):
         answer = input.language_input()
         answer2=input.language2_input()
         count = len(answer)
-        language_string = f'You stated that the {answer} is/are your favorite team(s). You are from {answer2}Your response uses {count} characters.'
+        language_string = f'You stated that the {answer} is/are your favorite team(s). You are from {answer2}. Your response uses {count} characters.'
         return language_string
     
     
