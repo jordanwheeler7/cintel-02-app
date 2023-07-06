@@ -25,7 +25,7 @@ app_ui = ui.page_navbar(
                 ui.h3("Please input your information below"),
                 ui.input_text("name_input", "Enter your name", placeholder="Your Name"),
                 ui.input_text("language_input", "Enter your favorite sport(s) team(s)", placeholder="Favorite Team(s)"),
-                ui.input_text("language_input2", "Enter your home state", placeholder="Home State)")
+                ui.input_text("language_input2", "Enter your home state", placeholder="Home State")
                 ui.tags.hr(),
             ),
             ui.panel_main(
