@@ -25,6 +25,7 @@ app_ui = ui.page_navbar(
                 ui.h3("Please input your information below"),
                 ui.input_text("name_input", "Enter your name", placeholder="Your Name"),
                 ui.input_text("language_input", "Enter your favorite sport(s) team(s)", placeholder="Favorite Team(s)"),
+                ui.input_text("language_input2", "Enter your home state", placeholder="Home State)")
                 ui.tags.hr(),
             ),
             ui.panel_main(
@@ -69,8 +70,9 @@ def server(input, output, session):
     @render.text
     def insights_output():
         answer = input.language_input()
+        answer2=input.language2_input()
         count = len(answer)
-        language_string = f'You stated that {answer} is/are your favorite team(s). Your response uses {count} characters.'
+        language_string = f'You stated that the {answer} is/are your favorite team(s). You are from {answer2}Your response uses {count} characters.'
         return language_string
     
     
